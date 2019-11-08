@@ -16,3 +16,8 @@
       git:
         repo: https://github.com/pampanoor/javahome-app
         dest: /var/www/html 
+    - name: start and enable apache
+      service: 
+        name: httpd
+        stat: start
+        enabled: Yes      
