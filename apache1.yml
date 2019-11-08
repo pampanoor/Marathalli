@@ -1,6 +1,6 @@
 ---
 - hosts: 172.31.8.190
-  become:
+  become: true
   tasks:
     - name: Install apache
       yum:
